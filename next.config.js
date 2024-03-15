@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'standalone',
     async headers() {
         return [
             {
-              source: '/:path*',
+              source: '/',
               headers: [
                {
                  key: 'Content-Security-Policy',
