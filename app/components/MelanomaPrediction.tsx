@@ -44,7 +44,7 @@ const MelanomaPrediction = () => {
     body.append("image", image);
     body.append("model", model.value)
 
-    const response : Response = await fetch("http://ai-derm-api-lb-394270268.ap-south-1.elb.amazonaws.com/infer", {
+    const response : Response = await fetch("/api/infer", {
       method: "POST",
       body
     });
