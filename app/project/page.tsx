@@ -9,7 +9,7 @@ const ProjectDescriptionPage = () => {
       <div className='flex flex-col items-center p-6 w-11/12 bg-white rounded-3xl shadow-xl'>
         
         <div className='mx-5'>
-        <div className='text-xl font-semibold underline mt-5 mb-3'> Abstract </div>
+        <div className='text-xl font-semibold underline mt-5 mb-3'> Abstrac </div>
         <p>
           The literature survey, "AI Dermatologist: Melanoma Classification using Deep Learning," will explore the integration of 
           computer vision techniques in healthcare using deep convolutional neural networks to differentiate malignant melanoma from 
