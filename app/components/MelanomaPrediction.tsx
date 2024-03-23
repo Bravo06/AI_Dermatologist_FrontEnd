@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import { useState, ChangeEvent, DragEvent } from 'react'
-import Select, { ActionMeta } from 'react-select';
+import Select from 'react-select';
 
 interface APIResponse {
   resText : string;
@@ -44,7 +44,7 @@ const MelanomaPrediction = () => {
     body.append("image", image);
     body.append("model", model.value)
 
-    const response : Response = await fetch("/api/infer", {
+    const response : Response = await fetch("https://primate-wise-longhorn.ngrok-free.app/infer", {
       method: "POST",
       body
     });
